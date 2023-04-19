@@ -1,6 +1,7 @@
 public struct MyLibrarytest {
     public private(set) var text = "Hello, World!"
 
-    public init() {
+    public static func doSomeWork() {
+        print("doing some work")
     }
 }
