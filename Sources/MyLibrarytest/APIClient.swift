@@ -10,6 +10,8 @@ import Foundation
 public class APIClient {
     let baseURL = "https://jsonplaceholder.typicode.com"
     
+    public init() {} // Add this public initializer
+    
     public func fetchData(_ completion: @escaping (Result<[String: Any], Error>) -> Void) {
         let urlString = "\(baseURL)/todos/1" // This is the endpoint we'll be making a request to
         guard let url = URL(string: urlString) else {
